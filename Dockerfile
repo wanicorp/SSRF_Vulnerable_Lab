@@ -1,4 +1,4 @@
-FROM php:7.2-apache
+FROM php:7.4.33-apache
 
 RUN apt update && apt install -y xvfb libfontconfig wkhtmltopdf build-essential python-dev python-pip python-cffi libcairo2 libpango1.0-0 libpangocairo-1.0.0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info && python2 -m pip install "weasyprint<43"
 
